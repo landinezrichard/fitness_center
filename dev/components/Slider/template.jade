@@ -1,0 +1,7 @@
+section.Slider
+	ul.rslides
+		-var data = [{"src":"./img/banner.jpg"},{"src":"http://lorempixel.com/1100/400/sports/"},{"src":"http://lorempixel.com/1100/400/nature/"}]
+		- for (var x = 0; x < 3; x++)
+			li
+				figure.Slider-imageContainer
+					img.Slider-image(src="#{data[x].src}", alt="imagen #{x}")
